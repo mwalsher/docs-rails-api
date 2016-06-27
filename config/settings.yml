@@ -1,0 +1,9 @@
+# Store all API keys here
+# Don't commit production keys
+production:
+  some_setting: <%= ENV['SOME_SETTING'] %>
+
+development:
+  some_setting: asdf
+
+test:
