@@ -20,7 +20,7 @@ class DocumentChannel < ApplicationCable::Channel
   end
 
   def user_connected
-    broadcast(event: "user_connected")
+    broadcast(event: "user_connected", name: Document.create_name)
   end
 
   def user_disconnected
@@ -36,6 +36,10 @@ class DocumentChannel < ApplicationCable::Channel
     @document.update_attribute(text: payload["content"])
     # puts "#{@document.text}, #{@document.id}, #{@document_id}, #{payload["content"]}"
     broadcast(event: "content_changed", content: payload["content"])
+  end
+
+  def greeting(payload)
+    broadcast(event: "greeting", cursor_position: payload["position"], name: payload["name"])
   end
 
   private
