@@ -10,8 +10,8 @@ class DocumentsController < ApplicationController
   end
 
   def create
-    @document = Document.create
-    render json: @document.id
+    @document = Document.create(url: Document.generate_url)
+    render json: {@document.id => @document.url}
   end
 
 end
