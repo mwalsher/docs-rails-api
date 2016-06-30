@@ -19,4 +19,20 @@ class Document < ApplicationRecord
     URL_BASE + self.url
   end
 
+  def send_message(phone_number)
+    # TWILIO_NUMBER: '7782007426'
+    # TWILIO_AUTH_TOKEN: '42609622ed644e6d5098bf9f03e0ead3'
+    # TWILIO_ACCOUNT_SID: 'AC20cf858bc76b1c93b8c10e44f118c4ce'
+    # put in local_env.yml
+
+    @twilio_number = ENV['TWILIO_NUMBER']
+    @client = Twilio::REST::Client.new ENV['TWILIO_ACCOUNT_SID'], ENV['TWILIO_AUTH_TOKEN']
+
+    message = @client.account.messages.create(
+      :from => @twilio_number,
+      :to => phone_number,
+      :body => self.url_share
+    )
+    puts "SMS sent to #{message.to} :)"
+  end
 end
