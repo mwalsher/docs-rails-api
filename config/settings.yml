@@ -4,6 +4,9 @@ production:
   some_setting: <%= ENV['SOME_SETTING'] %>
 
 development:
-  some_setting: asdf
+  redis:
+    host:: localhost
+    port: 6379
+    db: 2
 
 test:
