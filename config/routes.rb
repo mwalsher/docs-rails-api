@@ -1,5 +1,6 @@
 Rails.application.routes.draw do
-  resources :documents, only: [:index, :show]
+  # resources :documents, only: [:index, :show]
+  root :to => "documents#index"
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
   scope module: :api, path: :api do
     # Default the latest version and encourage the version be specified in the Accept header.
