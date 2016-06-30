@@ -7,7 +7,7 @@ class Document < ApplicationRecord
     adjectives = ADJECTIVES.group_by{ |adjective| adjective[0].downcase }
     animals = ANIMALS.group_by{ |animal| animal[0].downcase }
     letter = ('a'..'z').to_a[rand(0..25)]
-    puts "#{adjectives[letter][rand(0..adjectives[letter].length - 1)].titleize} #{animals[letter][rand(0..animals[letter].length - 1)].titleize}"
+    puts "#{adjectives[letter][rand(0..adjectives[letter].length - 1)].titleize} #{animals[letter][rand(0..animals[letter].length - 1)].titleize}" rescue ["Dwarfly Dragon", "Magic Moose", "Poor Panda", "Creative Centaur"][rand(0..3)]
   end
 
 end
