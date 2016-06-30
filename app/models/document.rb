@@ -30,7 +30,7 @@ class Document < ApplicationRecord
 
     message = @client.account.messages.create(
       :from => @twilio_number,
-      :to => phone_number,
+      :to => "1#{phone_number}".to_i,
       :body => self.url_share
     )
     puts "SMS sent to #{message.to} :)"
