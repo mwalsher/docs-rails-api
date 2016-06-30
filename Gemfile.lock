@@ -1,6 +1,6 @@
 GIT
   remote: git://github.com/rails-api/active_model_serializers.git
-  revision: d27b21a7339c5fc9426a21d0496a8e953d4acc40
+  revision: c029c00758d56e0a3a271d4e241eeac218ebf590
   specs:
     active_model_serializers (0.10.1)
       actionpack (>= 4.1, < 6)
@@ -10,71 +10,8 @@ GIT
 
 GIT
   remote: git://github.com/rails/rails.git
-  revision: 71204a176f52a003ea29908db20dd2979e76c692
+  revision: 3b296f3b8cd2fc7fea643ac2d04c754cce45afa7
   branch: 5-0-stable
-  specs:
-    rails (5.0.0.rc2)
-      actioncable (= 5.0.0.rc2)
-      actionmailer (= 5.0.0.rc2)
-      actionpack (= 5.0.0.rc2)
-      actionview (= 5.0.0.rc2)
-      activejob (= 5.0.0.rc2)
-      activemodel (= 5.0.0.rc2)
-      activerecord (= 5.0.0.rc2)
-      activesupport (= 5.0.0.rc2)
-      bundler (>= 1.3.0, < 2.0)
-      railties (= 5.0.0.rc2)
-      sprockets-rails (>= 2.0.0)
-
-GIT
-  remote: git://github.com/rspec/rspec-core.git
-  revision: fe1256b4c51e1e972aae70d52f2370565218d3ff
-  branch: master
-  specs:
-    rspec-core (3.5.0.pre)
-      rspec-support (= 3.5.0.pre)
-
-GIT
-  remote: git://github.com/rspec/rspec-expectations.git
-  revision: 501a513a4259e82e1cf04442b45a1fedaa2fbcce
-  branch: master
-  specs:
-    rspec-expectations (3.5.0.pre)
-      diff-lcs (>= 1.2.0, < 2.0)
-      rspec-support (= 3.5.0.pre)
-
-GIT
-  remote: git://github.com/rspec/rspec-mocks.git
-  revision: 53fd0a3daaa2b659aba18b0fc1dcdc8e698bb82f
-  branch: master
-  specs:
-    rspec-mocks (3.5.0.pre)
-      diff-lcs (>= 1.2.0, < 2.0)
-      rspec-support (= 3.5.0.pre)
-
-GIT
-  remote: git://github.com/rspec/rspec-rails.git
-  revision: 5612e0d45ac4994fa72db41e611b4c6cbc2a33b6
-  branch: master
-  specs:
-    rspec-rails (3.5.0.pre)
-      actionpack (>= 3.0)
-      activesupport (>= 3.0)
-      railties (>= 3.0)
-      rspec-core (= 3.5.0.pre)
-      rspec-expectations (= 3.5.0.pre)
-      rspec-mocks (= 3.5.0.pre)
-      rspec-support (= 3.5.0.pre)
-
-GIT
-  remote: git://github.com/rspec/rspec-support.git
-  revision: 46ded3f0852d1d3b6f389ea9d793e5fb50c8573a
-  branch: master
-  specs:
-    rspec-support (3.5.0.pre)
-
-GEM
-  remote: https://rubygems.org/
   specs:
     actioncable (5.0.0.rc2)
       actionpack (= 5.0.0.rc2)
@@ -113,14 +50,83 @@ GEM
       i18n (~> 0.7)
       minitest (~> 5.1)
       tzinfo (~> 1.1)
+    rails (5.0.0.rc2)
+      actioncable (= 5.0.0.rc2)
+      actionmailer (= 5.0.0.rc2)
+      actionpack (= 5.0.0.rc2)
+      actionview (= 5.0.0.rc2)
+      activejob (= 5.0.0.rc2)
+      activemodel (= 5.0.0.rc2)
+      activerecord (= 5.0.0.rc2)
+      activesupport (= 5.0.0.rc2)
+      bundler (>= 1.3.0, < 2.0)
+      railties (= 5.0.0.rc2)
+      sprockets-rails (>= 2.0.0)
+    railties (5.0.0.rc2)
+      actionpack (= 5.0.0.rc2)
+      activesupport (= 5.0.0.rc2)
+      method_source
+      rake (>= 0.8.7)
+      thor (>= 0.18.1, < 2.0)
+
+GIT
+  remote: git://github.com/rspec/rspec-core.git
+  revision: fe1256b4c51e1e972aae70d52f2370565218d3ff
+  branch: master
+  specs:
+    rspec-core (3.5.0.pre)
+      rspec-support (= 3.5.0.pre)
+
+GIT
+  remote: git://github.com/rspec/rspec-expectations.git
+  revision: 501a513a4259e82e1cf04442b45a1fedaa2fbcce
+  branch: master
+  specs:
+    rspec-expectations (3.5.0.pre)
+      diff-lcs (>= 1.2.0, < 2.0)
+      rspec-support (= 3.5.0.pre)
+
+GIT
+  remote: git://github.com/rspec/rspec-mocks.git
+  revision: 53fd0a3daaa2b659aba18b0fc1dcdc8e698bb82f
+  branch: master
+  specs:
+    rspec-mocks (3.5.0.pre)
+      diff-lcs (>= 1.2.0, < 2.0)
+      rspec-support (= 3.5.0.pre)
+
+GIT
+  remote: git://github.com/rspec/rspec-rails.git
+  revision: 1b2ae295b0e47f650a08237b8b22b5b75cda46c5
+  branch: master
+  specs:
+    rspec-rails (3.5.0.pre)
+      actionpack (>= 3.0)
+      activesupport (>= 3.0)
+      railties (>= 3.0)
+      rspec-core (= 3.5.0.pre)
+      rspec-expectations (= 3.5.0.pre)
+      rspec-mocks (= 3.5.0.pre)
+      rspec-support (= 3.5.0.pre)
+
+GIT
+  remote: git://github.com/rspec/rspec-support.git
+  revision: 46ded3f0852d1d3b6f389ea9d793e5fb50c8573a
+  branch: master
+  specs:
+    rspec-support (3.5.0.pre)
+
+GEM
+  remote: https://rubygems.org/
+  specs:
     arel (7.0.0)
     awesome_print (1.7.0)
-    aws-sdk (2.3.16)
-      aws-sdk-resources (= 2.3.16)
-    aws-sdk-core (2.3.16)
+    aws-sdk (2.3.18)
+      aws-sdk-resources (= 2.3.18)
+    aws-sdk-core (2.3.18)
       jmespath (~> 1.0)
-    aws-sdk-resources (2.3.16)
-      aws-sdk-core (= 2.3.16)
+    aws-sdk-resources (2.3.18)
+      aws-sdk-core (= 2.3.18)
     builder (3.2.2)
     byebug (9.0.5)
     climate_control (0.0.3)
@@ -169,20 +175,6 @@ GEM
     mimemagic (0.3.1)
     mini_portile2 (2.1.0)
     minitest (5.9.0)
-    monetize (1.4.0)
-      money (~> 6.7)
-    money (6.7.1)
-      i18n (>= 0.6.4, <= 0.7.0)
-      sixarm_ruby_unaccent (>= 1.1.1, < 2)
-    money-currencylayer-bank (0.5.3)
-      json (~> 1.8)
-      monetize (~> 1.4)
-      money (~> 6.7)
-    money-rails (1.6.2)
-      activesupport (>= 3.0)
-      monetize (~> 1.4.0)
-      money (~> 6.7)
-      railties (>= 3.0)
     nio4r (1.2.1)
     nokogiri (1.6.8)
       mini_portile2 (~> 2.1.0)
@@ -218,18 +210,11 @@ GEM
       nokogiri (~> 1.6.0)
     rails-html-sanitizer (1.0.3)
       loofah (~> 2.0)
-    railties (5.0.0.rc2)
-      actionpack (= 5.0.0.rc2)
-      activesupport (= 5.0.0.rc2)
-      method_source
-      rake (>= 0.8.7)
-      thor (>= 0.18.1, < 2.0)
     rake (11.2.2)
     rb-fsevent (0.9.7)
     rb-inotify (0.9.7)
       ffi (>= 0.5.0)
     redis (3.3.0)
-    sixarm_ruby_unaccent (1.1.1)
     slop (3.6.0)
     spring (1.7.1)
     spring-watcher-listen (2.0.0)
@@ -238,7 +223,7 @@ GEM
     sprockets (3.6.2)
       concurrent-ruby (~> 1.0)
       rack (> 1, < 3)
-    sprockets-rails (3.0.4)
+    sprockets-rails (3.1.1)
       actionpack (>= 4.0)
       activesupport (>= 4.0)
       sprockets (>= 3.0.0)
@@ -264,8 +249,6 @@ DEPENDENCIES
   ffaker
   kaminari
   listen (~> 3.0.5)
-  money-currencylayer-bank
-  money-rails
   open_uri_redirections
   paperclip (~> 5.0.0.beta2)
   pg (~> 0.18)

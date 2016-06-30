@@ -28,8 +28,6 @@ gem 'dotenv-rails'
 gem 'kaminari'
 
 # App-specific gems
-gem 'money-rails'
-gem 'money-currencylayer-bank'
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console

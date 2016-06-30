@@ -6,4 +6,4 @@
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
 
-Money::Currency.all.sort_by(&:name).each { |currency| Currency.where(iso: currency.iso_code, name: currency.name).first_or_create }
+# Money::Currency.all.sort_by(&:name).each { |currency| Currency.where(iso: currency.iso_code, name: currency.name).first_or_create }
