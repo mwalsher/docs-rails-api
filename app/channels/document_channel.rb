@@ -32,9 +32,8 @@ class DocumentChannel < ApplicationCable::Channel
   end
 
   def content_changed(payload)
-    @document = Document.first#@document_id
-    @document.text = payload["content"]
-    @document.save!
+    @document = Document.first @document_id
+    @document.update_attribute(text: payload["content"])
     # puts "#{@document.text}, #{@document.id}, #{@document_id}, #{payload["content"]}"
     broadcast(event: "content_changed", content: payload["content"])
   end
