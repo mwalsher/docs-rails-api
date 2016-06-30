@@ -21,8 +21,9 @@ class DocumentChannel < ApplicationCable::Channel
 
   def user_connected
     name = Document.create_name
+    @document = Document.find(@document_id)
     set_user(@uuid, {name: name})
-    broadcast(event: "user_connected", name: name, users: users)
+    broadcast(event: "user_connected", name: name, users: users, content: @document.text)
   end
 
   def user_disconnected
